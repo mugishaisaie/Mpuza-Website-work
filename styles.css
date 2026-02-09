@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+   height: 100vh;
+   background: #E1F5FE;
+}
+
+header{
+    background-color: #E8422F;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr) 380px; 
+    
+    gap: 24px; 
+    max-width: 1280px; 
+    margin: 0 auto; 
+    padding: 20px;
+    
+    /* OPTIONAL: Prevents the whole grid from overflowing the screen horizontally */
+    overflow-x: hidden; 
+}
+
+img {
+    max-width: 100%; /* Image can shrink, but never grow past its container */
+    height: auto;    /* Keeps the image form getting squished/stretched */
+    display: block;  /* Fixes weird spacing at the bottom of images */
+}
+
+/* Target the container div */
+aside .images {
+    position: relative; /* KEEPS the absolute profile pic inside this box */
+    width: 100%;       /* Ensures the container fills the sidebar */
+    text-align: center; /* Centers the text inside */
+}
+
+/* Force the banner image to be full width */
+aside .images img:first-child {
+    width: 100%;       /* Overrides the 50px rule */
+    height: auto;      /* Keeps the image ratio correct */
+    display: block;    /* Removes extra space below image */
+    border-radius: 8px 8px 0 0; /* Optional: rounds top corners */
+}
+h1,h2,h3,h4,p{
+    margin-bottom: 1rem;
+}
+
+.images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust the profile picture */
+.profile-img {
+    position: absolute;
+    width: 60px;       /* Set your desired size */
+    height: 60px;
+    top: 50%;          /* Adjust this to position it over the banner line */
+    left: 50%;         /* Move to middle */
+    transform: translate(-50%, -50%); /* Perfectly center it */
+    border: 3px solid white; /* Adds a nice cut-out effect */
+    border-radius: 50%;
+}
+
+aside{
+    width: 100%;
+    text-align: center;
+}
+i,a{
+    color: #2D9CDB;
+    margin-left: 10px;
+}
+/* 1. Class for small images (logos, icons, profile pics) */
+.s-img {
+    width: 50px;
+    height: 50px; /* Force it to be a square */
+    object-fit: contain; /* Ensures the logo doesn't get squished or cut off */
+    border-radius: 50%; /* Optional: Makes profile pics circular */
+}
+
+/* 2. Class for the big background banner */
+.b-img {
+    width: 100%; /* Takes full width of the container */
+    height: auto; /* Keeps the correct height ratio */
+    display: block;
+    object-fit: cover;
+}
+
+
+.paras-icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.div-1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+
+
+.div-2{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+span{
+    margin-left: 10px;
+    
+}
+
+/* Optional: Mobile Responsiveness */
+@media (max-width: 900px) {
+    .main-layout {
+        /* Stack them on top of each other on mobile */
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.div-articles{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-top: 1rem;
+}
+article{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 16px;
+    margin-bottom: 1rem;
+}
+
+.div-follow{
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+    
+
+}
+
+.last-dev-sec-2{
+background-color: #fff;
+ margin-top: 1rem;
+
+}
+
+
+.jobdesc{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.jobdesc i{
+    color: black;
+    /* font-weight: bold; */
+    margin-right: 10px;
+}
+
+.div-articles article img{
+    width: 50px;
+    height: 50px;
+    margin-top: -2px;
+}
+.div-articles article button{
+    width: 100%;
+    background-color: #2D9CDB;
+    text-align: center;
+    color: #E1F5FE;
+    padding: 6px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.last-dev-sec-2 i{
+    color: black;
+    margin-right: 10px;
+}
+
+.list-icons i{
+     color: black;
+    margin-right: 10px;
+
+}
+
+
