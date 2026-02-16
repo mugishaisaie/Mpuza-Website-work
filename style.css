@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.topbar {
+    background: #e43d30;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+}
+
+.nav-item i {
+    font-size: 20px;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: #1fb6ff;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.search {
+    flex: 100;
+    padding: 0 20px;
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1fb6ff;
+}
+
+.search input {
+    width: 100%;
+    padding: 8px 8px 8px 35px;
+    border-radius: 4px;
+    border: none;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.btn {
+    background: white;
+    color: #e43d30;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.layout {
+    display: flex;
+    background: #e9f0f4;
+    min-height: 100vh;
+    margin-top: 5%;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #8dd3f638;
+    padding: 15px 0;
+}
+
+.profile {
+    background: #d9f0fc36;
+    border-radius: 6px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 0 15px 15px;
+}
+
+.cover {
+    height: 80px;
+    background: url("hills.jpg") center/cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50%;
+    height: 75px;
+    margin-top: -40px;
+    border: 2px solid white;
+}
+
+.desc {
+    font-size: 13px;
+    color: #666;
+}
+
+.headline-link {
+    color: #2ea3d0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.side-menu p {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.text {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.numbers {
+    color: #1fb6ff;
+    font-weight: bold;
+}
+.company-info{
+    padding: 2%;
+}
+
+.company-info,
+.pro {
+    margin: 15px;
+}
+
+.company-box {
+    text-align: center;
+}
+
+.company-box img {
+    width: 60px;
+}
+
+.create-company {
+    font-size: 13px;
+    margin: 3%;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #8dd3f638;
+}
+
+.section-title,
+.post-box,
+.mini-card,
+.job-card,
+.fav-box,
+.job-detail {
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(112, 112, 112, 0.406);
+}
+
+.post-box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.post-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    color: #2ea3d0;
+    margin-top: 8px;
+}
+
+.post-right {
+    display: flex;
+     align-items: bottom;  
+    gap: 5px;
+    padding: 50px;
+}
+
+
+.jobless-count {
+    color: #2ea3d0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.post-box button {
+    background: #66b1cf;
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.card-row {
+    display: flex;
+    gap: 15px;
+}
+
+.mini-card {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+}
+
+.mini-card img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.role {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.degree {
+    font-size: 12px;
+    color: #777;
+}
+
+.verify {
+    color: #2ea3d0;
+}
+
+.mini-card button {
+    margin-top: 10px;
+    background: #2ea3d0;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow {
+    color: #2ea3d0;
+    cursor: pointer;
+}
+
+.job-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.job-list li {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.count-inline {
+    display: flex;
+    gap: 20px;
+    font-size: 5px;
+    color: #e43d30;
+    margin-top: 8px;
+}
+
+.job-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.job-actions span:hover {
+    color: #e43d30;
+    cursor: pointer;
+}
+
+.right-panel {
+    width: 320px;
+    padding: 20px;
+    background-color: #8dd3f638;
+}
+
+.job-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.job-title img {
+    width: 40px;
+}
+
+.job-tools {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.countdown {
+    display: flex;
+     color: #d11717;
+    justify-content: space-between;
+padding-left: 15px;
+    margin: 15px 0;
+    margin-bottom: 15%;
+}
+.onomo{
+    color: #000000;
+    font-size: 12px;
+}
+.countdown span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.button{
+    bottom: 0;
+}
+.job{
+    color: rgb(75, 75, 75);
+     
+}
+.info{
+    margin-bottom: 10px;
+}
+.infos{
+    margin-top: 10px;
+}
+.lorem{
+    padding: 1%;
+    margin: 2%;
+    word-spacing: 2px;
+}
+.items{
+    margin: 2%;
+}
+.sys{
+    font-weight: bold;
+}
+.follow{
+    color: #2ea3d0;
+}
